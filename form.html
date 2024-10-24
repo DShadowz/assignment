@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h3>Sing up form</h3>
+    <!--form tag for make Web pagw Form, action attribute for 
+    server link, method attribute for Data store type-->
+    <form action="" method="get">
+    <!--use for and id attribute for Input Dedication-->
+        <label for="country_input">Country</label>
+    <!--list attribute for Input Suggestion-->
+    <!--type=text value for Text Input-->
+        <input id="country_input" type="text" list="country">
+        <datalist id="country">
+            <option value="Afganistan"></option>
+            <option value="Bangladesh"></option>
+            <option value="India"></option>
+            <option value="Japan"></option>
+            <option value="Malaysia"></option>
+        </datalist> <br><br>
+        <label for="name">Name</label>
+        <input id="name" type="text"><br><br>
+        <label for="age">Date of birth</label>
+    <!--type=date value for Birthday type Input-->
+        <input id="age" type="date"><br><br>
+        <label for="address">Address</label>
+    <!--textarea tag for Address type Input-->
+        <textarea name="address" id="address"></textarea><br><br>
+        <label for="phone">Phone</label>
+    <!--select tag for Option Menu-->
+        <select name="phone" id="phone">
+            <option value="+88">+88</option>
+            <option value="+91">+91</option>
+            <option value="+62">+62</option>
+            <option value="+81">+81</option>
+            <option value="+98">+98</option>
+        </select>
+        <input id="phone" type="text"><br><br>
+        <label for="email">Email</label>
+    <!--type=email value for Email type Input-->
+        <input id="email" type="email"><br><br>
+        <label for="password">Password</label>
+    <!--type=password value for Password type Inout-->
+        <input id="password" type="password" maxlength="8"><br><br>
+        <label for="gender">Gender</label>
+    <!--type=radio value for Select type Input-->
+        <input id="gender" type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="others">Others<br><br>
+        <label for="blood_group">Blood Group</label>
+        <select name="blood_group" id="blood_group">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+    <!--type=checkbox value for Checkbox type Input-->
+        <p><input type="checkbox">
+        Agree with all conditions</p>
+        <button>Submit</button>
+
+    </form>
+</body>
+</html>
